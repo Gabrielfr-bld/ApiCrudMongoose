@@ -4,8 +4,8 @@ services:
   mongo:
     image: mongo:5.0.6
     ports:
-      - "27017:27017"
+      - "27018:27018"
     restart: always
-    enviroment:
+    environment:
         MONGO_INITDB_ROOT_USERNAME: '${MONGO_INITDB_ROOT_USERNAME}'
         MONGO_INITDB_ROOT_PASSWORD: '${MONGO_INITDB_ROOT_PASSWORD}'
